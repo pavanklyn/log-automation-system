@@ -1,0 +1,10 @@
+2026-07-02 09:00:01,123 - myapp - INFO - Application started
+2026-07-02 09:00:05,456 - myapp - INFO - Connected to database
+2026-07-02 09:02:11,789 - myapp - WARNING - Slow query detected: 2.3s
+2026-07-02 09:05:33,001 - myapp - ERROR - Connection refused to payment service
+2026-07-02 09:05:34,002 - myapp - ERROR - Connection refused to payment service
+2026-07-02 09:05:40,010 - myapp - INFO - Retrying payment service connection
+2026-07-02 09:06:00,020 - myapp - INFO - Payment service reconnected
+2026-07-02 09:10:15,333 - myapp - ERROR - OutOfMemoryError in worker process 3
+2026-07-02 09:10:16,334 - myapp - CRITICAL - Worker process 3 crashed, restarting
+2026-07-02 09:15:00,500 - myapp - INFO - Scheduled job 'cleanup' completed

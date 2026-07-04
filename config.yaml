@@ -1,0 +1,29 @@
+log_directory: "./sample_logs"
+archive_directory: "./archive"
+archive_after_days: 7
+
+alerts:
+  enabled: true
+  error_threshold: 10
+  window_minutes: 15
+  email:
+    smtp_host: "smtp.gmail.com"
+    smtp_port: 587
+    sender: "alerts@example.com"
+    sender_password_env: "LOG_ALERT_EMAIL_PASSWORD"
+    recipients:
+      - "you@example.com"
+
+aws:
+  enabled: false
+  bucket_name: "my-log-archive-bucket"
+  region: "ap-south-1"
+
+report:
+  output_path: "./reports"
+  format: "html"
+
+schedule:
+  scan_interval_minutes: 5
+  archive_interval_hours: 24
+  report_interval_hours: 24
